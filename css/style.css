@@ -1,0 +1,112 @@
+/* Required height of parents of the Full Page Carousel for proper displaying carousel itself */
+html,
+body,
+.view {
+  height: 100%; }
+
+html {
+  scroll-behavior: smooth;
+}
+/* Full Page Carousel itself*/
+.carousel {
+  height: 100%; }
+  .carousel .carousel-inner {
+    height: 100%; }
+    .carousel .carousel-inner .carousel-item,
+    .carousel .carousel-inner .active {
+      height: 100%; }
+
+/* Navbar animation */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.top-nav-collapse {
+  background-color: #FFBE4A; 
+  color: black !important;
+}
+
+.heading1{
+  color: #FFBE4A !important;  
+  font-weight: 400;
+}
+
+.heading1 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.heading2{
+  color: #FFBE4A !important;  
+  font-weight: 400;
+}
+
+.heading2 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+.heading3{
+  color: #FFBE4A !important;  
+  font-weight: 400;
+}
+
+.heading3 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.brand-name{
+  font-family: 'Libre Baskerville', serif;
+  text-transform: capitalize;
+}
+.price{
+  color: #6B818C;
+}
+/* Adding color to the Navbar on mobile */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #FFBE4A; } }
+
+/* Footer color for sake of consistency with Navbar */
+.page-footer {
+  background-color: #202020; }
+
+/* buttons */
+/* Icon Pulse Grow */
+@-webkit-keyframes hvr-icon-pulse-grow {
+  to {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+}
+@keyframes hvr-icon-pulse-grow {
+  to {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+}
+.hvr-icon-pulse-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-icon-pulse-grow .hvr-icon {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-icon-pulse-grow .hvr-icon {
+  -webkit-animation-name: hvr-icon-pulse-grow;
+  animation-name: hvr-icon-pulse-grow;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
