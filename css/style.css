@@ -61,10 +61,6 @@ html {
 .price{
   color: #6B818C;
 }
-/* Adding color to the Navbar on mobile */
-@media only screen and (max-width: 768px) {
-  .navbar {
-    background-color: #FFBE4A; } }
 
 /* Footer color for sake of consistency with Navbar */
 .page-footer {
